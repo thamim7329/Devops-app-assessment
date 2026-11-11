@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build and Run Containers') {
             steps {
-                sh 'docker-compose up -d --build'
+               sh 'docker-compose -f Docker-compose.yml up -d --build'
             }
         }
 
